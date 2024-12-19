@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Hub - Age Restricted</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="age-check">
+        <h1>Welcome to Video Hub</h1>
+        <p>You must be 18 or older to access this site.</p>
+        <button onclick="checkAge(true)">I am 18+</button>
+        <button onclick="checkAge(false)">I am under 18</button>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <header>
+            <h1>Video Hub</h1>
+        </header>
+        <section id="video-section">
+            <h2>Latest Videos</h2>
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
